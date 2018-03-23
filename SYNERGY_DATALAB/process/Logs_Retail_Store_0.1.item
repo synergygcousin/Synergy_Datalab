@@ -114,8 +114,8 @@
   </parameters>
   <node componentName="tS3Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_1" show="false"/>
-    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;guillaume&quot;"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="qerLXGIj+jmKzm4afKuyBQ=="/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;f8cde4d9-a350-4a17-aa64-de1f3898fadb&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="0RMsyjmybrE="/>
     <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="false"/>
     <elementParameter field="CHECK" name="ASSUME_ROLE" value="false"/>
     <elementParameter field="TEXT" name="ARN" value="&quot;&quot;" show="false"/>
