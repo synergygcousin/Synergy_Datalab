@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_xYP-EC6FEeiedsTbfmKyGg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_xYP-ES6FEeiedsTbfmKyGg" comment="" name="Bucket_S3" prompt="Bucket_S3?" promptNeeded="false" type="id_String" value="synergy.fr.datalab.eu-west-1"/>
+  <contextParameter xmi:id="_xYP-Ei6FEeiedsTbfmKyGg" comment="" name="Dossier_S3_Logs_Retail_Store" prompt="Dossier_S3_Logs_Retail_Store?" promptNeeded="false" type="id_String" value="Logs_Retail_Store"/>
+</talendfile:ContextType>
