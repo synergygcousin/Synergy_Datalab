@@ -6,7 +6,7 @@
     <contextParameter comment="" name="Bucket_S3" prompt="Bucket_S3?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="synergy.fr.datalab.eu-west-1"/>
     <contextParameter comment="" name="Dossier_Local" prompt="Dossier_Local?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="C:\Users\gcousin\Documents\Datalab\"/>
     <contextParameter comment="" name="Dossier_Local_Retail_Store" prompt="Dossier_Local_Retail_Store?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="retail-store-logs-sample-data\"/>
-    <contextParameter comment="" name="Dossier_S3_Logs_Retail_Store" prompt="Dossier_S3_Logs_Retail_Store?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Logs_Retail_Store\"/>
+    <contextParameter comment="" name="Dossier_S3_Logs_Retail_Store" prompt="Dossier_S3_Logs_Retail_Store?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Logs_Retail_Store/"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -190,7 +190,7 @@
     <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="BUCKET" value="context.Bucket_S3"/>
-    <elementParameter field="TEXT" name="KEY" value="&quot;Logs_Retail_Store\&quot;+((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+    <elementParameter field="TEXT" name="KEY" value="context.Dossier_S3_Logs_Retail_Store+((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
     <elementParameter field="FILE" name="FILE" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
     <elementParameter field="CHECK" name="ENABLE-SERVER-SIDE-ENCRYPTION" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
