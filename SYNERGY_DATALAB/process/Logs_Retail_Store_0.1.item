@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Cle_acces" prompt="Cle_acces?" promptNeeded="false" repositoryContextId="_eIlrQC6FEeiedsTbfmKyGg" type="id_String" value="AKIAIOQGNZLHWOP7P3GA"/>
+    <contextParameter comment="" name="Cle_secrete" prompt="Cle_secrete?" promptNeeded="false" repositoryContextId="_eIlrQC6FEeiedsTbfmKyGg" type="id_Password" value="WNT++X2tiqTQ2rPE7tSHLWOAtJJTkFs7+wja1sq/m7BQtrXDvbyq7cyyPmUJm4Uu"/>
+    <contextParameter comment="" name="Bucket_S3" prompt="Bucket_S3?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="synergy.fr.datalab.eu-west-1"/>
+    <contextParameter comment="" name="Dossier_Local" prompt="Dossier_Local?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="C:\Users\gcousin\Documents\Datalab\"/>
+    <contextParameter comment="" name="Dossier_Local_Retail_Store" prompt="Dossier_Local_Retail_Store?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="retail-store-logs-sample-data\"/>
+    <contextParameter comment="" name="Dossier_S3_Logs_Retail_Store" prompt="Dossier_S3_Logs_Retail_Store?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Logs_Retail_Store\"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
@@ -114,8 +121,8 @@
   </parameters>
   <node componentName="tS3Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_1" show="false"/>
-    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIAIOQGNZLHWOP7P3GA&quot;"/>
-    <elementParameter field="PASSWORD" name="SECRET_KEY" value="KpZB677AcqHSYF7FB3650zDpxJsQsiln5raQNF0O22HbF8QhO7CrgMeI9bZYrLWq"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" value="context.Cle_acces"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="8pW6Nmy2kudhdQ319utGLv4N1m03HxQ0"/>
     <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="false"/>
     <elementParameter field="CHECK" name="ASSUME_ROLE" value="false"/>
     <elementParameter field="TEXT" name="ARN" value="&quot;&quot;" show="false"/>
@@ -140,7 +147,27 @@
     <elementParameter field="TEXT" name="STS_ENDPOINT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tS3Put" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="256">
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.Dossier_Local+context.Dossier_Local_Retail_Store"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES"/>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tS3Put" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Put_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
@@ -162,9 +189,9 @@
     <elementParameter field="FILE" name="ENCRYPTED_KEY_X509" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="BUCKET" value="&quot;synergy.fr.datalab.eu-west-1&quot;"/>
-    <elementParameter field="TEXT" name="KEY" value="&quot;products.tsv&quot;"/>
-    <elementParameter field="FILE" name="FILE" value="&quot;C:/Users/gcousin/Documents/Datalab/retail-store-logs-sample-data/products.tsv&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET" value="context.Bucket_S3"/>
+    <elementParameter field="TEXT" name="KEY" value="context.Dossier_S3_Logs_Retail_Store+((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;))"/>
+    <elementParameter field="FILE" name="FILE" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
     <elementParameter field="CHECK" name="ENABLE-SERVER-SIDE-ENCRYPTION" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false" show="false"/>
@@ -174,8 +201,13 @@
     <elementParameter field="TEXT" name="PART_SIZE" value="5"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tS3Connection_1" offsetLabelX="0" offsetLabelY="0" source="tS3Connection_1" target="tS3Put_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tS3Connection_1" offsetLabelX="0" offsetLabelY="0" source="tS3Connection_1" target="tFileList_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tS3Put_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Connection_1" show="false"/>
@@ -183,7 +215,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tS3Put_1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
