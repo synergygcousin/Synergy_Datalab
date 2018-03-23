@@ -163,7 +163,7 @@
     <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="BUCKET" value="&quot;synergy.fr.datalab.eu-west-1&quot;"/>
-    <elementParameter field="TEXT" name="KEY" value="&quot;Logs_Retail_Store/products.tsv&quot;"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;products.tsv&quot;"/>
     <elementParameter field="FILE" name="FILE" value="&quot;C:/Users/gcousin/Documents/Datalab/retail-store-logs-sample-data/products.tsv&quot;"/>
     <elementParameter field="CHECK" name="ENABLE-SERVER-SIDE-ENCRYPTION" value="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
