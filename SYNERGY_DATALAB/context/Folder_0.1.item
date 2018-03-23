@@ -6,4 +6,8 @@
   <contextParameter xmi:id="_7xkiUS6FEeiedsTbfmKyGg" comment="" name="Dossier_Local_Retail_Store" prompt="Dossier_Local_Retail_Store?" promptNeeded="false" type="id_String" value="retail-store-logs-sample-data\"/>
   <contextParameter xmi:id="_EdZgoC6fEeiedsTbfmKyGg" comment="" name="Dossier_S3_Cryptomonnaies" prompt="Dossier_S3_Cryptomonnaies?" promptNeeded="false" type="id_String" value="Cryptomonnaies/"/>
   <contextParameter xmi:id="_EdZgoS6fEeiedsTbfmKyGg" comment="" name="Dossier_Local_Cryptomonnaies" prompt="Dossier_Local_Cryptomonnaies?" promptNeeded="false" type="id_String" value="Cryptomonnaies\"/>
+  <contextParameter xmi:id="_bQcy8C6lEeiedsTbfmKyGg" comment="" name="Dossier_Local_Commerce_Ext_imp" prompt="Dossier_Local_Commerce_Ext_imp?" promptNeeded="false" type="id_String" value="Commerce_exterieur\Import\"/>
+  <contextParameter xmi:id="_bQcy8S6lEeiedsTbfmKyGg" comment="" name="Dossier_Local_Commerce_Ext_exp" prompt="Dossier_Local_Commerce_Ext_exp?" promptNeeded="false" type="id_String" value="Commerce_exterieur\Export\"/>
+  <contextParameter xmi:id="_bQcy8i6lEeiedsTbfmKyGg" comment="" name="Dossier_S3_Commerce_Ext_imp" prompt="Dossier_S3_Commerce_Ext_imp?" promptNeeded="false" type="id_String" value="Commerce_exterieur/Import/"/>
+  <contextParameter xmi:id="_bQcy8y6lEeiedsTbfmKyGg" comment="" name="Dossier_S3_Commerce_Ext_exp" prompt="Dossier_S3_Commerce_Ext_exp?" promptNeeded="false" type="id_String" value="Commerce_exterieur/Export/"/>
 </talendfile:ContextType>
