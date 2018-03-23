@@ -4,4 +4,6 @@
   <contextParameter xmi:id="_xYP-Ei6FEeiedsTbfmKyGg" comment="" name="Dossier_S3_Logs_Retail_Store" prompt="Dossier_S3_Logs_Retail_Store?" promptNeeded="false" type="id_String" value="Logs_Retail_Store/"/>
   <contextParameter xmi:id="_7xkiUC6FEeiedsTbfmKyGg" comment="" name="Dossier_Local" prompt="Dossier_Local?" promptNeeded="false" type="id_String" value="C:\Users\gcousin\Documents\Datalab\"/>
   <contextParameter xmi:id="_7xkiUS6FEeiedsTbfmKyGg" comment="" name="Dossier_Local_Retail_Store" prompt="Dossier_Local_Retail_Store?" promptNeeded="false" type="id_String" value="retail-store-logs-sample-data\"/>
+  <contextParameter xmi:id="_EdZgoC6fEeiedsTbfmKyGg" comment="" name="Dossier_S3_Cryptomonnaies" prompt="Dossier_S3_Cryptomonnaies?" promptNeeded="false" type="id_String" value="Cryptomonnaies/"/>
+  <contextParameter xmi:id="_EdZgoS6fEeiedsTbfmKyGg" comment="" name="Dossier_Local_Cryptomonnaies" prompt="Dossier_Local_Cryptomonnaies?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
