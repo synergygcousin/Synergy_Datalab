@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_AG-A0S58Eeijurdz3U_t9A" label="Synergy_Datalab" description="Datalab Synergy" language="java" technicalLabel="SYNERGY_DATALAB" author="_AG-A0i58Eeijurdz3U_t9A" productVersion="Talend Integration Cloud Elastic Edition-6.5.1.20180116_1512" url="{&quot;location&quot;:&quot;https://github.com/synergygcousin/Synergy_Datalab&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" bigData="false"/>
+  <TalendProperties:User xmi:id="_AG-A0i58Eeijurdz3U_t9A" login="gcousin@eval7640.talend.com" firstName="Guillaume" lastName="Cousin" type="DI"/>
+</xmi:XMI>
