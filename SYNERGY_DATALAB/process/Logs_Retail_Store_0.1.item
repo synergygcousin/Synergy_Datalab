@@ -5,7 +5,13 @@
     <contextParameter comment="" name="Cle_secrete" prompt="Cle_secrete?" promptNeeded="false" repositoryContextId="_eIlrQC6FEeiedsTbfmKyGg" type="id_Password" value="WNT++X2tiqTQ2rPE7tSHLWOAtJJTkFs7+wja1sq/m7BQtrXDvbyq7cyyPmUJm4Uu"/>
     <contextParameter comment="" name="Bucket_S3" prompt="Bucket_S3?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="synergy.fr.datalab.eu-west-1"/>
     <contextParameter comment="" name="Dossier_Local" prompt="Dossier_Local?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="C:\Users\gcousin\Documents\Datalab\"/>
+    <contextParameter comment="" name="Dossier_Local_Commerce_Ext_exp" prompt="Dossier_Local_Commerce_Ext_exp?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Commerce_exterieur\Export\"/>
+    <contextParameter comment="" name="Dossier_Local_Commerce_Ext_imp" prompt="Dossier_Local_Commerce_Ext_imp?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Commerce_exterieur\Import\"/>
+    <contextParameter comment="" name="Dossier_Local_Cryptomonnaies" prompt="Dossier_Local_Cryptomonnaies?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Cryptomonnaies\"/>
     <contextParameter comment="" name="Dossier_Local_Retail_Store" prompt="Dossier_Local_Retail_Store?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="retail-store-logs-sample-data\"/>
+    <contextParameter comment="" name="Dossier_S3_Commerce_Ext_exp" prompt="Dossier_S3_Commerce_Ext_exp?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Commerce_exterieur/Export/"/>
+    <contextParameter comment="" name="Dossier_S3_Commerce_Ext_imp" prompt="Dossier_S3_Commerce_Ext_imp?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Commerce_exterieur/Import/"/>
+    <contextParameter comment="" name="Dossier_S3_Cryptomonnaies" prompt="Dossier_S3_Cryptomonnaies?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Cryptomonnaies/"/>
     <contextParameter comment="" name="Dossier_S3_Logs_Retail_Store" prompt="Dossier_S3_Logs_Retail_Store?" promptNeeded="false" repositoryContextId="_xYG0IC6FEeiedsTbfmKyGg" type="id_String" value="Logs_Retail_Store/"/>
   </context>
   <parameters>
